@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>설명 목록</title>
+</head>
+<body>
+  <!--
+    dl - 설명 목록 (블록 레벨 요소)
+      * Description List의 약자
+      * 용어의 대한 설명 목록을 정의할 때 쓰임
+      * 자식 요소로 dt, dd 태그를 반드시 정의 해주어야 한다.
+      * dl -> dt - dd 순으로 마크업 해야 함
+      * dl 태그는 dt, dd 이외에는 자식 요소로 올 수 없다.
+      * 다만, dt, dd를 한쌍으로 묶는 div 태그는 예외적으로 올 수 있음
+        - dl > dt + dd (OK)
+        - dl > div > dt + dd (OK)
+        - dl > div > dt + dd + dt + dd (NG)
+        - dl > dd + dt (NG)
+        - dl > p > dt + dd (NG)
+
+    dt (블록 레벨 요소)
+      * Description Term의 약자
+      * 설명 목록의 용어를 정리
+      * 텍스트, 인라인 요소, 블록 레벨 요소 모두 포함 가능
+
+    dd (블록 레벨 요소)
+      * Description Detail의 약자
+      * 용어에 대한 세부 설명을 정의
+      * 텍스트, 인라인 요소, 블록 레벨 요소 모두 포함 가능
+  -->
+  <dl>
+    <dt>HTML</dt>
+    <dd>Hypertext Markup Language</dd>
+    <dd>version html4.0, xhtml1.0, html5</dd>
+    <dt>css</dt>
+    <dd>cascading style sheet</dd>
+    <dd>version css2, css3</dd>
+  </dl>
+</body>
+</html>
