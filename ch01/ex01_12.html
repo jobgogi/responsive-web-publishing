@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지 맵</title>
+</head>
+<body>
+  <!--
+    map 태그
+      하나의 이미지에 여러 개 링크가 적용되어야 하는 경우 사용된다
+      - 링크의 영역을 사각형, 원, 다각형으로 나타낼 수 있음
+
+      * http://maschek.hu/imagemap/imgmap
+  -->
+  <img src="images/map.jpg" alt="웹 도서관" usemap="#library">
+  <map name="library">
+    <area shape="rect" coords="48,10,290,132" href="#" alt="A관" target="_blank">
+  </map>
+</body>
+</html>
