@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>표</title>
+  <style>
+    table {
+      width: 100%;  /* 가로길이 100% */
+      border-collapse: collapse;  /* td 요소들의 위, 아래, 좌, 우 테두리선이 겹쳤을 때 하나의 테두리 선으로 표현 */
+    }
+    td {
+      border: 1px solid #000; /* 1px 테두리선 표현 */
+    }
+  </style>
+</head>
+<body>
+  <!--
+    table (블록 레벨 요소)
+      * 표를 정의할 때 사용하는 태그
+      * 행 (Row), 열 (Column)의 2차원 정보로 구성
+      * 자식 요소로 tr을 반드시 지정해야 함. table > tr > td 순으로 마크업
+        - table > tr > td (OK)
+        - table > td > tr (NG)
+        - table > div > tr > td (NG)
+      * tr - 행 (Row)을 정의할 때 사용하는 태그
+      * td - tr의 자식 요소로 표에서 열 (Column)을 정의할 때 사용하는 태그
+      * th - 제목 역할을 하는 셀을 정의할 때 사용
+      * 표의 내용을 기준으로 제목 영역 thead, 본문 영역 tbody, 열의 요약 영역 tfoot으로 구분하여 정의
+      * tr처럼 td, th 태그들을 가로로 묶는 행 (Row) 그룹은 있지만, 세로로 묶는 열 (Column) 그룹은 없음
+  -->
+  <table>
+    <tr>
+      <td>교과목</td>
+      <td>점수</td>
+    </tr>
+    <tr>
+      <td>HTML</td>
+      <td>93</td>
+    </tr>
+    <tr>
+      <td>CSS</td>
+      <td>92</td>
+    </tr>
+    <tr>
+      <td>평균</td>
+      <td>92.5</td>
+    </tr>
+  </table>
+</body>
+</html>
