@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼</title>
+</head>
+<body>
+  <!--
+    form
+      * 온라인 서식 (검색, 로그인, 회원가입 등)에서 입력한 값들을 처리하는 프로그램
+        으로 전송할 때 사용하는 태그
+      * 텍스트, 인라인 요소, 블록 레벨 요소를 포함할 수 있음
+        - form > table > tr > td (OK)
+        - form > form (NG)
+      * action 속성 - 서식에서 작성한 값을 처리하는 프로그램의 주소를 지정
+      * method 속성 - get, post 방식을 사용
+    fieldset
+      * 양식 요소들을 그룹화할 때 사용하는 태그
+      * 텍스트, 인라인 요소, 블록 레벨 요소를 포함할 수 있음
+      * 그룹화 된 서식의 제목을 정의할 수 있는 legend 태그를 자식 요소로 포함
+        - fieldset > legend{로그인} (OK)
+        - fieldset > div > legend{로그인} (NG)
+  -->
+  <form action="#" method="post">
+    <fieldset>
+      <legend>로그인</legend>
+      <p>ID: <input type="text"></p>
+      <p>PW: <input type="password"></p>
+    </fieldset>
+  </form>
+</body>
+</html>
