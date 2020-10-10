@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오디오</title>
+</head>
+<body>
+  <!--
+    audio
+      * HTML 문서에 음악과 같은 오디오를 삽입할 때 사용
+      * mp3, wav, ogg 3가지의 파일 형식이 존재
+      - src : 오디오 파일의 주소
+      - preload
+        @ HTML 문서가 로드될 때 오디오 파일 로드 여부를 판단
+        @ none, metadata, auto 값이 있음
+      - autoplay: HTML 문서가 로드될 때 오디오를 자동으로 실행
+      - muted : 오디오 음소거
+      - loop : 오디오를 반복하여 재생
+      - controls : 오디오 컨트롤을 표시
+  -->
+  <audio controls>
+    <source src="media/applause.wav" type="audio/wav">
+    <source src="media/applause.ogg" type="audio/ogg">
+    <source src="media/applause.mp3" type="audio/mp3">
+  </audio>
+</body>
+</html>
