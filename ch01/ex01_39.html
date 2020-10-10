@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>비디오</title>
+</head>
+<body>
+  <!--
+    video
+      * HTML 문서에 동영상을 삽입할 때 사용하는 태그
+      * mp4, webm, ogg 3가지의 파일 형식이 있음
+      - src : 영상 파일 주소
+      - preload
+        @ HTML 문서가 로드될 때 영상 파일 로드 여부를 판단
+        @ none, metadata, auto 값이 있음
+      - autoplay : HTML 문서가 로드될 때 영상을 자동으로 실행
+      - muted : 영상의 오디오 음소거
+      - loop : 영상을 반복하여 재생
+      - controls : 영상 컨트롤을 표시
+      - width: 영상의 가로 크기를 지정
+      - height: 영상의 세로 크기를 지정
+      - poster : 영상의 다운로드 중에 표시되는 이미지
+  -->
+  <video controls poster="images/sun.jpg" width="800" height="450">
+    <source src="media/sunrise.mp4" type="video/mp4">
+    <source src="media/sunrise.webm" type="video/webm">
+    <source src="media/sunrise.ogg" type="video/ogg">
+  </video>
+</body>
+</html>
