@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>하위 선택자</title>
+  <style>
+    .abox > p { color: blue; }
+  </style>
+</head>
+<body>
+  <div class="abox">
+    <p>7월의 여행지</p>
+    <ul>
+      <li>
+        <p>1주차 여행지</p>
+      </li>
+      <li>
+        <p>2주차 여행지</p>
+      </li>
+    </ul>
+    <p>8월의 여행지</p>
+  </div>
+  <p>내년의 여행지</p>
+  <!--
+    자식 선택자
+    요소 내부에 있는 해당 요소를 가리키지만, 하위 요소의 하위 요소는 가리키지 않는다.
+    선택자 사이를 '>'으로 분리한다.
+  -->
+</body>
+</html>
