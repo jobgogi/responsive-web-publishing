@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가상요소 선택자</title>
+  <style>
+    /* 요소의 첫 글자 */
+    p:first-letter {
+      font-size: 150%;
+    }
+    /* 같은 요소 중 첫 번째 요소 */
+    p:first-child {
+      color: blue;
+    }
+    p {
+      background: lightgray;
+    }
+    /* 같은 요소 중 마지막 요소 */
+    p:last-child {
+      background: palegoldenrod;
+    }
+    /* 같은 요소 중 n번째 요소 */
+    p:nth-child(3) {
+      color: red;
+    }
+    /* 요소 안 맨 앞에 배치될 요소 (마크업에 없는 가상 요소) */
+    p:before {
+      content: '@';
+    }
+    /* 요소 안 맨 뒤에 배치될 요소 (마크업에 없는 가상 요소) */
+    .box:after {
+      content: "항목을 선택해주세요.";
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <p>COMPANY</p>
+    <p>PRODUCT</p>
+    <p>SERVICE</p>
+    <p>COMMUNITY</p>
+  </div>
+</body>
+</html>
